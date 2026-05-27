@@ -3,13 +3,13 @@
 int main() {
     int loginOk, dispositivoConhecido, tentativaSuspeita;
 
-    printf("Login correto? (1/0): ");
+    printf("Login correto?: ");
     scanf("%d", &loginOk);
 
-    printf("Dispositivo conhecido? (1/0): ");
+    printf("Dispositivo conhecido?: ");
     scanf("%d", &dispositivoConhecido);
 
-    printf("Tentativa suspeita? (1/0): ");
+    printf("Tentativa suspeita?: ");
     scanf("%d", &tentativaSuspeita);
 
     if (loginOk == 1) {
