@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int tipoUsuario, horario, autorizacao;
+
+    printf("Digite o tipo de usuario: ");
+    scanf("%d", &tipoUsuario);
+
+    printf("Digite o horario atual: ");
+    scanf("%d", &horario);
+
+    printf("Digite a autorizacao especial: ");
+    scanf("%d", &autorizacao);
+
+    if (tipoUsuario == 2) {
+        printf("ENTRADA PERMITIDA");
+    } else if (tipoUsuario == 1) {
+
+        if (horario >= 8 && horario <= 18) {
+            printf("ENTRADA PERMITIDA");
+        } else {
+
+            if (autorizacao == 1) {
+                printf("ENTRADA PERMITIDA");
+            } else {
+                printf("ENTRADA NEGADA");
+            }
+
+        }
+
+    } else {
+        printf("ENTRADA NEGADA");
+
+        
+      return 0;
+        
+    }
+
+    return 0;
+}
