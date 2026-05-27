@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int biometria, senha, modoSeguro;
+
+    printf("Digite a biometria: ");
+    scanf("%d", &biometria);
+
+    printf("Digite a senha: ");
+    scanf("%d", &senha);
+
+    printf("Digite o modo seguro: ");
+    scanf("%d", &modoSeguro);
+
+    if (modoSeguro == 1) {
+        if (senha == 1) {
+            printf("DESBLOQUEADO");
+        } else {
+            printf("BLOQUEADO");
+        }
+    } else {
+        if (biometria == 1 || senha == 1) {
+            printf("DESBLOQUEADO");
+        } else {
+            printf("BLOQUEADO");
+        }
+
+        return 0;
+}
+    }
+
+    return 0;
+}
